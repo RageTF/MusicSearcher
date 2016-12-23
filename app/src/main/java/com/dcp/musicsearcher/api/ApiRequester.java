@@ -1,5 +1,6 @@
 package com.dcp.musicsearcher.api;
 
+import com.dcp.musicsearcher.api.pojo.lyrics.LyricSearch;
 import com.dcp.musicsearcher.api.pojo.songs.SongSearch;
 
 import java.io.IOException;
@@ -44,7 +45,13 @@ public class ApiRequester {
         Call<SongSearch> songSearchCall=apiSearchCall.searchSongs(parameters.build(),API_KEY);
         Response<SongSearch> songSearchResponse=songSearchCall.execute();
         return songSearchResponse;
-    };
+    }
+
+    public Response<LyricSearch> getResultLyricsSearch(long trackId) throws IOException {
+        Call<LyricSearch> lyricSearchCall=apiSearchCall.searchLyrics(String.valueOf(trackId),API_KEY);
+        Response<LyricSearch> lyricSearchResponse=lyricSearchCall.execute();
+        return lyricSearchResponse;
+    }
 
     public static class SongSearchBuilder{
 

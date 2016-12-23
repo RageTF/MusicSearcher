@@ -1,5 +1,6 @@
 package com.dcp.musicsearcher.api;
 
+import com.dcp.musicsearcher.api.pojo.lyrics.LyricSearch;
 import com.dcp.musicsearcher.api.pojo.songs.SongSearch;
 
 import java.util.Map;
@@ -17,5 +18,8 @@ public interface ApiSearchCall {
 
     @GET("track.search")
     Call<SongSearch> searchSongs(@QueryMap(encoded = true) Map<String,String> parameters,@Query("apikey") String apiKey);
+
+    @GET("track.lyrics.get")
+    Call<LyricSearch> searchLyrics(@Query("track_id") String trackId,@Query("apikey") String apiKey);
 
 }
