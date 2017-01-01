@@ -7,6 +7,7 @@ import android.util.Log;
 import com.dcp.musicsearcher.api.ApiRequester;
 import com.dcp.musicsearcher.api.pojo.songs.SongSearch;
 import com.dcp.musicsearcher.api.pojo.songs.TrackList;
+import com.dcp.musicsearcher.data.ApplicationDataBase;
 
 import java.io.IOException;
 import java.util.List;
