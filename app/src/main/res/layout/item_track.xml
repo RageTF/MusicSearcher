@@ -13,7 +13,7 @@ android:paddingTop="10dp">
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_centerVertical="true"
-    android:src="@mipmap/ic_launcher" />
+    android:src="@mipmap/ic_music_note_grey600_48dp" />
 
 <RelativeLayout
     android:id="@+id/rl_name_and_artist_container"
@@ -26,14 +26,14 @@ android:paddingTop="10dp">
         android:id="@+id/tv_song_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25dp" />
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/tv_artist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_song_name"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 </RelativeLayout>
 
 

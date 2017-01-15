@@ -56,9 +56,9 @@ public class ItemActivity extends AppCompatActivity implements TaskInterface {
         mToFavoritesButton = (ImageButton) findViewById(R.id.to_favorites_button);
 
         if(mFavoritesController.contains(mItemId)){
-            //Если песня уже в избранном то один вид кнопки
+            mToFavoritesButton.setImageResource(R.mipmap.ic_star_white_48dp);//Если песня уже в избранном то один вид кнопки
         }else{
-            //Иначе другой
+            mToFavoritesButton.setImageResource(R.mipmap.ic_star_outline_white_48dp);//Иначе другой
         }
 
         mToFavoritesButton.setOnClickListener(new View.OnClickListener() {
@@ -67,10 +67,10 @@ public class ItemActivity extends AppCompatActivity implements TaskInterface {
 
                 if(mFavoritesController.contains(mItemId)){
                     mFavoritesController.removeFromFavorites(mItemId);
-                    //Меняем вид кнопки
+                    mToFavoritesButton.setImageResource(R.mipmap.ic_star_outline_white_48dp);//Меняем вид кнопки
                 }else {
                     mFavoritesController.addToFavorites(mItemId, mItemName.getText().toString(), mItemPerformer.getText().toString());
-                    //Тут тоже
+                    mToFavoritesButton.setImageResource(R.mipmap.ic_star_white_48dp);//Тут тоже
                 }
 
             }
