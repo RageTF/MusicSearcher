@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MusicSearcher</string>
+    <string name="artist">Artist</string>
+    <string name="song_name">Song name</string>
+    <string name="words">Words</string>
+    <string name="search">search</string>
+    <string name="favorite">favorite</string>
 </resources>
