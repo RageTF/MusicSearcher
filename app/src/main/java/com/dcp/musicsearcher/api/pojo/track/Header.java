@@ -1,5 +1,5 @@
 
-package com.dcp.musicsearcher.api.pojo.lyrics;
+package com.dcp.musicsearcher.api.pojo.track;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -8,16 +8,16 @@ public class Header {
 
     @SerializedName("status_code")
     @Expose
-    private Integer statusCode;
+    private Long statusCode;
     @SerializedName("execute_time")
     @Expose
     private Double executeTime;
 
-    public Integer getStatusCode() {
+    public Long getStatusCode() {
         return statusCode;
     }
 
-    public void setStatusCode(Integer statusCode) {
+    public void setStatusCode(Long statusCode) {
         this.statusCode = statusCode;
     }
 
