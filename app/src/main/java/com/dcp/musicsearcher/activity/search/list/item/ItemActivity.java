@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.dcp.musicsearcher.R;
 import com.dcp.musicsearcher.data.FavoritesController;
@@ -29,6 +30,7 @@ public class ItemActivity extends AppCompatActivity implements TaskInterface {
     private ImageButton mToFavoritesButton;
     private Button mRefreshButton;
     private FavoritesController mFavoritesController;
+    private boolean mRefreshVisible;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,11 +78,11 @@ public class ItemActivity extends AppCompatActivity implements TaskInterface {
             }
         });
         mRefreshButton= (Button) findViewById(R.id.refresh_button);
-        mRefreshButton.setVisibility(View.GONE);
         mRefreshButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mRefreshButton.setVisibility(View.GONE);
+                mRefreshVisible=false;
                 getFragment().start();
             }
         });
@@ -92,11 +94,17 @@ public class ItemActivity extends AppCompatActivity implements TaskInterface {
         }else{
             mProgressBar.setVisibility(View.GONE);
         }
-
+        mRefreshVisible=false;
         if(savedInstanceState!=null){
+            mRefreshVisible=savedInstanceState.getBoolean("refreshVisible");
             mItemName.setText(savedInstanceState.getString("itemName"));
             mItemPerformer.setText(savedInstanceState.getString("itemPerformer"));
             mItemLyrics.setText(savedInstanceState.getString("itemLyrics"));
+        }
+        if(mRefreshVisible){
+            mRefreshButton.setVisibility(View.VISIBLE);
+        }else{
+            mRefreshButton.setVisibility(View.GONE);
         }
         Intent intent = getIntent();
         mItemName.setText(intent.getStringExtra("KEY_NAME_SONG"));
@@ -132,6 +140,10 @@ public class ItemActivity extends AppCompatActivity implements TaskInterface {
     public void onError() {
         mRefreshButton.setVisibility(View.VISIBLE);
         mProgressBar.setVisibility(View.GONE);
+        mRefreshVisible=true;
+        mLoadVisible=false;
+        Toast.makeText(getApplicationContext(),
+                "No Internet connection", Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -140,6 +152,7 @@ public class ItemActivity extends AppCompatActivity implements TaskInterface {
         outState.putString("itemPerformer", mItemPerformer.getText().toString());
         outState.putString("itemLyrics", mItemLyrics.getText().toString());
         outState.putBoolean("loadVisible",mLoadVisible);
+        outState.putBoolean("refreshVisible",mRefreshVisible);
         super.onSaveInstanceState(outState);
     }
 }

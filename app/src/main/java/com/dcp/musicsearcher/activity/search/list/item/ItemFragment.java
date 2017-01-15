@@ -91,8 +91,10 @@ public class ItemFragment extends Fragment {
         protected void onPostExecute(String s) {
             mMyAsyncTask=null;
             if(mTaskInterface!=null){
-                if(s.equals("")){
+                if(s.equals("Error")){
                     mTaskInterface.onError();
+                }else if(s.equals("")){
+                    mTaskInterface.onFinish("Sorry, text not found");
                 }else mTaskInterface.onFinish(s);
             }
         }
@@ -105,7 +107,7 @@ public class ItemFragment extends Fragment {
                 Response<LyricSearch> response=apiRequester.getResultLyricsSearch(mItemId);
                 lyrics=response.body().getMessage().getBody().getLyrics().getLyricsBody();
             } catch (IOException e) {
-                e.printStackTrace();
+                lyrics="Error";
             }
             return lyrics;
         }
