@@ -35,9 +35,9 @@ public class RetainFragment extends Fragment {
     }
 
     public void startAsync(String... params){
-        asyncTask = new OnSearchRequestAsyncTask();
-        asyncTask.setRequestCallback(requestCallback);
-        asyncTask.execute(params);
+            asyncTask = new OnSearchRequestAsyncTask();
+            asyncTask.setRequestCallback(requestCallback);
+            asyncTask.execute(params);
     }
 
     private void setCallback(){

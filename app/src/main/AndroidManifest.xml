@@ -18,7 +18,7 @@
         </activity>
 
         <activity android:name=".activity.search.MainActivity"></activity>
-        <activity android:name=".activity.search.list.item.SongActivity"></activity>
+        <activity android:name=".activity.search.list.item.ItemActivity"></activity>
         <activity android:name=".activity.search.list.TrackListActivity"></activity>
 
     </application>

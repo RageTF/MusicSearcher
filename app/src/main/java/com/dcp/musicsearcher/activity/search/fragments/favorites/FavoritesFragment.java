@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.dcp.musicsearcher.R;
-import com.dcp.musicsearcher.activity.search.list.item.SongActivity;
+import com.dcp.musicsearcher.activity.search.list.item.ItemActivity;
 import com.dcp.musicsearcher.data.FavoritesController;
 
 import java.util.ArrayList;
@@ -77,8 +77,8 @@ public class FavoritesFragment extends Fragment implements FavoritesListListener
     }
     @Override
     public void onItemClick(int position) {
-        Intent intent=new Intent(getContext(), SongActivity.class);
-        intent.putExtra("KEY_TRACK_ID", mSongs.get(position).getTrackId());
+        Intent intent=new Intent(getContext(), ItemActivity.class);
+        intent.putExtra("KEY_ID", mSongs.get(position).getTrackId());
         intent.putExtra("KEY_NAME_SONG", mSongs.get(position).getNameSong());
         intent.putExtra("KEY_NAME_ARTIST", mSongs.get(position).getNameArtist());
         getContext().startActivity(intent);
@@ -116,7 +116,7 @@ public class FavoritesFragment extends Fragment implements FavoritesListListener
             public SongHolder(View itemView) {
                 super(itemView);
                 mNameSong=(TextView) itemView.findViewById(R.id.tv_song_name);
-                mNameArtist =(TextView) itemView.findViewById(R.id.tv_song_name);
+                mNameArtist =(TextView) itemView.findViewById(R.id.tv_artist);
             }
 
             public void bind(final int position){
