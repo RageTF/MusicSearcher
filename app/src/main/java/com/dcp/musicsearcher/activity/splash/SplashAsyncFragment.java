@@ -11,7 +11,7 @@ import android.support.v4.app.Fragment;
  * Created by Rage on 14.01.2017.
  */
 
-class SplashAsyncFragment extends Fragment {
+public class SplashAsyncFragment extends Fragment {
 
     private SplashCallback splashCallback;
     private EndSplashAnimation endSplashAnimation;
