@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_66dc56cacbf6510c701363a25649e82832d1ecd8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\okio-1.8.0_c6077763fd704a45af363ac2eab97481991e3d07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_ee2602bf5e195a81a6188099023f022a2b7e9388.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_d72949c87ba749d0e83d877fd84cf2f85517f900.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_d0c04024e41f4d9d358821f7c6d8e0cd36d94046.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_9d88ab0818dcde3216b7f6867f5abbae0b623625.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_953c1ce3203b1befc87abfaa440706ace2707f66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\retrofit-2.1.0_289962d50d80d612c259a980e1252a8b76f79092.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_92a7266e3546ade4fbff600691423159e4e18e19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_b65edc9a57d523b33020e5bb963666bd5e1540eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_5b3e900091f3a185931d0c0988641edaf19ab25f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_d9d9b2db51ebaa2cbfd35307617050355c7131fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\gson-2.7_ddc6c0ea78605c36c1c7d2dfff3e51a9bc97f98a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_24156677f09c25276a7f1ed3472ff9bd4f03cdca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\okhttp-3.3.0_ccf8a9c3078061205dd919292119af528f3d41b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_d0d54963d7daaea6c81b32296cfd88717001a41c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_1687ac613cbb49aec5bc748d8b644070c64c57e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_93f098624d884f95063861a3b3c9a6fd56d5bf35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_9abeb0dea899f2456c400302758f647e48485151.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="22416ccb917213ff836b5aa4192f8bf845684b09">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_98e45d54ae8735c9f6996980c9e155decc8276ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_0f117188eb28b79569d54dbdca4d36152c6f3256.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\converter-gson-2.1.0_4c09ac5af74bc6baebe96bdf4b54afb4042dd589.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1cbb5dcf8a813a2ab07002ede3bb08d8bed9fa80">
+        <dex dex="C:\Users\Ruslan\AndroidStudioProjects\MusicSearcher\app\build\intermediates\pre-dexed\debug\instant-run_16a36278c709f6286bff7be99f84402f58f1dc3a.jar" />
+    </item>
+
+</items>
