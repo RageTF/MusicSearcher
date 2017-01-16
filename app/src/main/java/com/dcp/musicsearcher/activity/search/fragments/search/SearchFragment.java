@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.dcp.musicsearcher.R;
+import com.dcp.musicsearcher.activity.search.MainActivity;
 import com.dcp.musicsearcher.activity.search.list.TrackListActivity;
 
 /**
@@ -56,10 +57,14 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
 
     private void setUpTheElements(View view) {
         etArtist = (EditText) view.findViewById(R.id.et_artist);
+        etArtist.setTypeface(MainActivity.typeface);
         etSongName = (EditText) view.findViewById(R.id.et_song_name);
+        etSongName.setTypeface(MainActivity.typeface);
         etWords = (EditText) view.findViewById(R.id.et_words);
+        etWords.setTypeface(MainActivity.typeface);
 
         btnSearch = (Button) view.findViewById(R.id.btn_search);
+        btnSearch.setTypeface(MainActivity.typeface);
         btnSearch.setOnClickListener(this);
     }
 

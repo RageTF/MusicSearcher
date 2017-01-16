@@ -6,7 +6,8 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -16,10 +17,13 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/view_search"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Поиск" />
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:text="Search" />
 
         </LinearLayout>
 
@@ -31,10 +35,13 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@id/view_favorites"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Избранное" />
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:text="Favorites" />
 
         </LinearLayout>
 

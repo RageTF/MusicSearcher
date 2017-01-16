@@ -8,7 +8,7 @@
     tools:context="com.dcp.musicsearcher.activity.search.list.item.ItemActivity">
 
     <LinearLayout
-        android:background="@color/splashBackground"
+        android:background="@color/colorPrimary"
         android:layout_weight="10"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -27,10 +27,12 @@
             android:layout_weight="0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center">
             <LinearLayout
                 android:id="@+id/item_info"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -38,6 +40,7 @@
                 <ImageView
                     android:layout_weight="4"
                     android:id="@+id/item_image"
+                    android:src="@mipmap/ic_music_note_grey600_48dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -46,20 +49,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
+                    <TextView
+                        android:text="Song Name"
+                        android:id="@+id/item_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:scrollHorizontally="true"
+                        android:gravity="center"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"/>
+
                     <TextView
                         android:id="@+id/item_performer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:singleLine="true"
-                        android:scrollHorizontally="true"
-                        android:gravity="center"
-                        android:ellipsize="marquee"
-                        android:marqueeRepeatLimit="marquee_forever"/>
-                    <TextView
-                        android:id="@+id/item_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:singleLine="true"
+                        android:text="Artist"
+                        android:textSize="15sp"
                         android:scrollHorizontally="true"
                         android:gravity="center"
                         android:ellipsize="marquee"
@@ -72,6 +81,8 @@
             <ImageButton
                 android:id="@+id/to_favorites_button"
                 android:layout_weight="7"
+                android:background="@drawable/empty_background"
+                android:src="@mipmap/ic_star_outline_white_48dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -79,8 +90,8 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/splashBackground"/>
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"/>
 
         <RelativeLayout
             android:layout_margin="7dp"
@@ -100,7 +111,10 @@
 
             <Button
                 android:id="@+id/refresh_button"
-                android:text="Refresh"
+                android:text="@string/refresh"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"/>

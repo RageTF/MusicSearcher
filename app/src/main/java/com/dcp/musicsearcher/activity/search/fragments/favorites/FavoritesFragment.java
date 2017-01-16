@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.dcp.musicsearcher.R;
+import com.dcp.musicsearcher.activity.search.MainActivity;
 import com.dcp.musicsearcher.activity.search.list.item.ItemActivity;
 import com.dcp.musicsearcher.data.FavoritesController;
 
@@ -25,7 +26,7 @@ public class FavoritesFragment extends Fragment implements FavoritesListListener
 
     private RecyclerView mFavoritesList;
     private FavoritesAdapter mFavoritesAdapter;
-    private TextView mEmptyList;
+    private TextView mIsEmpty;
 
     private FavoritesController mFavoritesController;
     private ArrayList<FavoritesController.SongInfo> mSongs;
@@ -54,12 +55,12 @@ public class FavoritesFragment extends Fragment implements FavoritesListListener
         mFavoritesList.setAdapter(mFavoritesAdapter);
         mFavoritesList.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        mEmptyList = (TextView) view.findViewById(R.id.empty_list);
+        mIsEmpty = (TextView) view.findViewById(R.id.is_empty);
 
         if(mSongs.isEmpty()){
-            mEmptyList.setVisibility(View.VISIBLE);
+            mIsEmpty.setVisibility(View.VISIBLE);
         }else{
-            mEmptyList.setVisibility(View.GONE);
+            mIsEmpty.setVisibility(View.GONE);
         }
 
     }
@@ -72,6 +73,11 @@ public class FavoritesFragment extends Fragment implements FavoritesListListener
     public void updateFavoritesData(){
         if(mSongs!=null && mFavoritesAdapter!=null){
             mSongs = mFavoritesController.getFavoritesSong();
+            if(mSongs.isEmpty()){
+                mIsEmpty.setVisibility(View.VISIBLE);
+            }else{
+                mIsEmpty.setVisibility(View.GONE);
+            }
             mFavoritesAdapter.notifyDataSetChanged();
         }
     }
@@ -116,7 +122,9 @@ public class FavoritesFragment extends Fragment implements FavoritesListListener
             public SongHolder(View itemView) {
                 super(itemView);
                 mNameSong=(TextView) itemView.findViewById(R.id.tv_song_name);
+                mNameSong.setTypeface(MainActivity.typeface);
                 mNameArtist =(TextView) itemView.findViewById(R.id.tv_artist);
+                mNameArtist.setTypeface(MainActivity.typeface);
             }
 
             public void bind(final int position){

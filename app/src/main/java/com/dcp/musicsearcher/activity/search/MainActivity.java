@@ -1,5 +1,7 @@
 package com.dcp.musicsearcher.activity.search;
 
+import android.content.Context;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -7,6 +9,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 
 import com.dcp.musicsearcher.R;
@@ -17,6 +20,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
 
+    public static Typeface typeface;
     private static ArrayList<Fragment> fragments;
 
     private boolean isLand = false;
@@ -33,8 +37,12 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if(typeface==null)typeface = Typeface.createFromAsset(getAssets(), "Montserrat-Regular.otf");
+
         mViewSearch = (TextView) findViewById(R.id.view_search);
+        mViewSearch.setTypeface(typeface);
         mViewFavorites = (TextView) findViewById(R.id.view_favorites);
+        mViewFavorites.setTypeface(typeface);
 
         mMainPager = (ViewPager) findViewById(R.id.main_pager);
         if(fragments==null){
@@ -94,6 +102,9 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 
     @Override
     public void onPageScrollStateChanged(int state) {
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(),
+                InputMethodManager.HIDE_NOT_ALWAYS);
     }
 
     private class MainPagerAdapter extends FragmentStatePagerAdapter {

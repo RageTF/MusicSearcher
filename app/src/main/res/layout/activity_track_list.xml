@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/mainBackground"
     tools:context="com.dcp.musicsearcher.activity.search.list.TrackListActivity">
 
     <android.support.v7.widget.RecyclerView
@@ -28,7 +29,19 @@
         android:id="@+id/refresh_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Refresh"
+        android:text="@string/refresh"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/is_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Not found"
         android:layout_centerInParent="true"/>
 
 </RelativeLayout>

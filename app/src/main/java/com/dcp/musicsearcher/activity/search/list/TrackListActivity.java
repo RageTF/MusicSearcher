@@ -8,9 +8,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.dcp.musicsearcher.R;
+import com.dcp.musicsearcher.activity.search.MainActivity;
 import com.dcp.musicsearcher.activity.search.list.item.ItemActivity;
 import com.dcp.musicsearcher.api.pojo.songs.SongSearch;
 
@@ -18,6 +20,7 @@ import retrofit2.Response;
 
 public class TrackListActivity extends AppCompatActivity implements AsyncSearchRequestCallback, OnTrackItemClickListener {
 
+    private TextView mIsEmpty;
     private RecyclerView trackListRecyclerView;
     private ProgressBar pbTLUpdate;
     private Button btnRefresh;
@@ -33,6 +36,9 @@ public class TrackListActivity extends AppCompatActivity implements AsyncSearchR
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track_list);
 
+        mIsEmpty = (TextView) findViewById(R.id.is_empty);
+        mIsEmpty.setTypeface(MainActivity.typeface);
+        mIsEmpty.setVisibility(View.GONE);
         pbTLUpdate = (ProgressBar) findViewById(R.id.pb_track_list_update);
 
         params[0] = getIntent().getStringExtra("KEY_NAME_ARTIST");
@@ -42,7 +48,8 @@ public class TrackListActivity extends AppCompatActivity implements AsyncSearchR
         retainFragment = getFragment();
         retainFragment.startAsync(params[0], params[1], params[2]);
 
-        btnRefresh=(Button) findViewById(R.id.refresh_button);
+        btnRefresh = (Button) findViewById(R.id.refresh_button);
+        btnRefresh.setTypeface(MainActivity.typeface);
         btnRefresh.setVisibility(View.GONE);
         btnRefresh.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +85,12 @@ public class TrackListActivity extends AppCompatActivity implements AsyncSearchR
     @Override
     public void onSearchRequestReturn(boolean isSuccessful, Response<SongSearch> response) {
         if (isSuccessful) {
+
+            if (response.body().getMessage().getBody().getTrackList().isEmpty()) {
+                mIsEmpty.setVisibility(View.VISIBLE);
+                return;
+            }
+
             trackListRecyclerView = (RecyclerView) findViewById(R.id.rv_track_list);
             trackListRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 

@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.dcp.musicsearcher.R;
+import com.dcp.musicsearcher.activity.search.MainActivity;
 import com.dcp.musicsearcher.data.FavoritesController;
 
 public class ItemActivity extends AppCompatActivity implements TaskInterface {
@@ -41,9 +42,12 @@ public class ItemActivity extends AppCompatActivity implements TaskInterface {
 
         mItemImage= (ImageView) findViewById(R.id.item_image);
         mItemPerformer = (TextView) findViewById(R.id.item_performer);
+        mItemPerformer.setTypeface(MainActivity.typeface);
         mItemPerformer.setSelected(true);
         mItemLyrics = (TextView) findViewById(R.id.item_lyrics);
+        mItemLyrics.setTypeface(MainActivity.typeface);
         mItemName= (TextView) findViewById(R.id.item_name);
+        mItemName.setTypeface(MainActivity.typeface);
         mItemName.setSelected(true);
         mProgressBar = (ProgressBar) findViewById(R.id.progress);
         mItemInfo = findViewById(R.id.item_info);
@@ -57,27 +61,22 @@ public class ItemActivity extends AppCompatActivity implements TaskInterface {
         });
         mToFavoritesButton = (ImageButton) findViewById(R.id.to_favorites_button);
 
-        if(mFavoritesController.contains(mItemId)){
-            //Если песня уже в избранном то один вид кнопки
-        }else{
-            //Иначе другой
-        }
-
         mToFavoritesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 if(mFavoritesController.contains(mItemId)){
                     mFavoritesController.removeFromFavorites(mItemId);
-                    //Меняем вид кнопки
+                    mToFavoritesButton.setImageResource(R.mipmap.ic_star_outline_white_48dp);
                 }else {
                     mFavoritesController.addToFavorites(mItemId, mItemName.getText().toString(), mItemPerformer.getText().toString());
-                    //Тут тоже
+                    mToFavoritesButton.setImageResource(R.mipmap.ic_star_white_48dp);
                 }
 
             }
         });
         mRefreshButton= (Button) findViewById(R.id.refresh_button);
+        mRefreshButton.setTypeface(MainActivity.typeface);
         mRefreshButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -110,6 +109,13 @@ public class ItemActivity extends AppCompatActivity implements TaskInterface {
         mItemName.setText(intent.getStringExtra("KEY_NAME_SONG"));
         mItemPerformer.setText(intent.getStringExtra("KEY_NAME_ARTIST"));
         mItemId=intent.getLongExtra("KEY_ID",0);
+
+        if(mFavoritesController.contains(mItemId)){
+            mToFavoritesButton.setImageResource(R.mipmap.ic_star_white_48dp);
+        }else{
+            mToFavoritesButton.setImageResource(R.mipmap.ic_star_outline_white_48dp);
+        }
+
         getFragment();
     }
 

@@ -3,6 +3,8 @@
     <string name="artist">Artist</string>
     <string name="song_name">Song name</string>
     <string name="words">Words</string>
-    <string name="search">search</string>
-    <string name="favorite">favorite</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="there_are_no_favorites">There are no favorites</string>
+    <string name="refresh">Refresh</string>
 </resources>

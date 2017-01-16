@@ -95,6 +95,7 @@ public class SplashActivity extends AppCompatActivity implements SplashCallback{
         logoAnimation.addFrame(splashImage5,mDuration);
         logoAnimation.addFrame(splashImage6,mDuration);
         logoAnimation.addFrame(splashImage7,mDuration);
+
         return  logoAnimation;
     }
 

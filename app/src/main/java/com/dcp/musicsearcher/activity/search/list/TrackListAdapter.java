@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.dcp.musicsearcher.R;
+import com.dcp.musicsearcher.activity.search.MainActivity;
 import com.dcp.musicsearcher.api.pojo.songs.SongSearch;
 import com.dcp.musicsearcher.api.pojo.songs.TrackList;
 
@@ -74,7 +75,9 @@ public class TrackListAdapter extends RecyclerView.Adapter {
             super(itemView);
 
             tvSongName = (TextView) itemView.findViewById(R.id.tv_song_name);
+            tvSongName.setTypeface(MainActivity.typeface);
             tvArtist = (TextView) itemView.findViewById(R.id.tv_artist);
+            tvArtist.setTypeface(MainActivity.typeface);
         }
         void bind(final int position){
             itemView.setOnClickListener(new View.OnClickListener() {
